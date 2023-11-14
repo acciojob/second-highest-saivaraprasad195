@@ -1,6 +1,4 @@
-//your JS code here. If required.
-		function secondHighest(arr) {
-			//Write your code here
+function secondHighest(arr) {
 			int n = arr.length;
 			
 			if(n == 0 || n == 1) return Number.NEGATIVE_INFINITY;
@@ -12,8 +10,10 @@
 
 				else return arr[0];
 			}
+	
 			let fg = arr[0];
 			let sg =Number.NEGATIVE_INFINITY;
+	
 			for(let i=1;i<n;i++){
 				if(arr[i]>fg){
 					fg=arr[i];
@@ -32,7 +32,8 @@
 			for (var i = 0; i < n; i++) {
 				arr[i] = prompt("Enter element " + (i+1));
 			}
-			console.log(secondHighest(arr));
-			
+			let result = secondHighest(arr);
+			let header = document.getElementById("h1");
+			header.innerText = `${result}`;
 		}
 		Main();
