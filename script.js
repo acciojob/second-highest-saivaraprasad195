@@ -32,7 +32,7 @@
 			for (var i = 0; i < n; i++) {
 				arr[i] = prompt("Enter element " + (i+1));
 			}
-			alert(secondHighest(arr));
+			console.log(secondHighest(arr));
 			
 		}
 		Main();
