@@ -1,5 +1,5 @@
 function secondHighest(arr) {
-			int n = arr.length;
+			let n = arr.length;
 			
 			if(n == 0 || n == 1) return Number.NEGATIVE_INFINITY;
 
@@ -16,8 +16,9 @@ function secondHighest(arr) {
 	
 			for(let i=1;i<n;i++){
 				if(arr[i]>fg){
-					fg=arr[i];
 					sg=fg;
+					fg=arr[i];
+					
 				}
 				else if(arr[i] > sg){
 					sg=arr[i];
@@ -36,4 +37,5 @@ function secondHighest(arr) {
 			let header = document.getElementById("h1");
 			header.innerText = `${result}`;
 		}
+
 		Main();
