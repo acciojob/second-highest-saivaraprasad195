@@ -8,7 +8,7 @@ function secondHighest(arr) {
 					
 				else if(arr[0] == arr[1]) return Number.NEGATIVE_INFINITY;
 
-				else return arr[0];
+				return arr[0];
 			}
 	
 			let fg = arr[0];
